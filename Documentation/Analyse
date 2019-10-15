@@ -1,0 +1,43 @@
+DESCRIPTION DU PROJET
+
+Nom du projet : XXXXXXXX
+
+
+BESOIN :
+          Un site informationnel doit permettre à l'utilisateur d'avoir accès à une masse d'information classées et imagées d'un produit en particulier.
+          Un site web doit avoir un temps de chargement inférieur à 3 secondes afin d'éviter tout désagrément et problèmes de réferencement.
+
+Objectif :
+          La réalisation du site Web XXXXXXX est un site Web de type "site informationnel".
+          Nos produits seront : les livres.En effet nous allons faire la présentation d'une grande quantité de livres/bande dessinées...
+          Il possédera une classification des produits, des informations commerciales, et des adresses de point de vente avec la disponibilité du produit.
+          L'utilisateur pourra rechercher un produit en fonction de son/sa :
+                                                                            -Type(poche,carré...)
+                                                                            -Titre
+                                                                            -Auteur
+                                                                            -Genre(roman,Aventure,science fiction...)
+                                                                            -Date(de création)
+                                                                            -Disponibilité(boolean)
+                                                                            -Quantité(nombre d'exemplaire)
+                                                                            -Prix(REEL)
+                                                                            -Identifiant(ex : BD....) = c'est une bande dessinée.....
+                                                                            -libelle (description du produit)
+Contraintes :
+            Il n'y aura pas de système de vente en ligne(panier,liste de souhait,réservation...),authentification.
+            Date de rendu du projet 07 Novembre 2019.
+            Respecter la loi Française; rester dans le cadre de l'article L122-5 du code de la propriété intellectuelle.
+            Avoir un code propre et documenté afin de permettre la relecture ou la maintenance de celui-ci.
+
+
+
+Technologies utilisées :
+            Programmation coté Serveur : PHP 7
+            Interface : HTML 5 , CSS 3
+            Base de données : SQLITE3
+
+
+
+
+EQUIPE :
+          Lucas Zaetta    D1
+          Téo   Berguerre   D1
