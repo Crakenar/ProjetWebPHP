@@ -1,6 +1,6 @@
 DESCRIPTION DU PROJET
 
-Nom du projet : XXXXXXXX
+Nom du projet : Lis tes ratures
 
 
 BESOIN :
@@ -20,7 +20,7 @@ Objectif :
                                                                             -Disponibilité(boolean)
                                                                             -Quantité(nombre d'exemplaire)
                                                                             -Prix(REEL)
-                                                                            -Identifiant(ex : BD....) = c'est une bande dessinée.....
+                                                                            -Identifiant(ex : BDxxxx...) = c'est une bande dessinée.....
                                                                             -libelle (description du produit)
 Contraintes :
             Il n'y aura pas de système de vente en ligne(panier,liste de souhait,réservation...),authentification.
