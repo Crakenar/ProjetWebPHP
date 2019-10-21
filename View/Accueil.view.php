@@ -11,9 +11,9 @@
     <h1>Accueil</h1>
     <!-- Barre de navigation-->
     <ul>
-        <li>Accueil</li>
-        <li>Bibliotheque</li>
-        <li>Contact</li>
+        <li> <a href="Accueil.view.php">Accueil</a></li>
+        <li> <a href="Bibliotheque.view.php">Bibliotheque</a></li>
+        <li> <a href="Contact.view.php">Contact</a></li>
     </ul>
     <!-- Selection critères-->
     <p>Choisissez vos critères</p>
@@ -27,7 +27,7 @@
             <input type="radio" name= "choix" value ="Science fiction" id ="SF">
             <label for="SF">Science Fiction</label>
             <br>
-            <input type="radio" name= "choix" value ="Romance" id ="aomance">
+            <input type="radio" name= "choix" value ="Romance" id ="romance">
             <label for="Romance">Romance</label>
             <br>
             <input type="radio" name= "choix" value ="Action" id ="action">
