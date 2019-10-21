@@ -1,11 +1,10 @@
-CREATE TABLE article(
-  Identifiant string,
-  Titre TEXT,
-  libelle TEXT,
-  Auteur TEXT,
-  Type string,
-  Genre TEXT,
-  Disponibilite boolean,
+CREATE TABLE articles(
+  Identifiant STRING,
+  Titre STRING,
+  Auteur STRING,
+  Type STRING,
+  Genre STRING,
+  Description TEXT,
   Quantite int,
   Prix REAL
 )

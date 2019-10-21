@@ -12,16 +12,15 @@ Objectif :
           Nos produits seront : les livres.En effet nous allons faire la présentation d'une grande quantité de livres/bande dessinées...
           Il possédera une classification des produits, des informations commerciales, et des adresses de point de vente avec la disponibilité du produit.
           L'utilisateur pourra rechercher un produit en fonction de son/sa :
-                                                                            -Type(poche,carré...)
+                                                                            -Identifiant (unique)
                                                                             -Titre
                                                                             -Auteur
-                                                                            -Genre(roman,Aventure,science fiction...)
-                                                                            -Date(de création)
-                                                                            -Disponibilité(boolean)
+                                                                            -Type(roman, bande dessinée, manga....)
+                                                                            -Genre(Policier, Aventure, Science Fiction...)
+                                                                            -Description (description du produit)
                                                                             -Quantité(nombre d'exemplaire)
                                                                             -Prix(REEL)
-                                                                            -Identifiant(ex : BDxxxx...) = c'est une bande dessinée.....
-                                                                            -libelle (description du produit)
+
 Contraintes :
             Il n'y aura pas de système de vente en ligne(panier,liste de souhait,réservation...),authentification.
             Date de rendu du projet 07 Novembre 2019.
