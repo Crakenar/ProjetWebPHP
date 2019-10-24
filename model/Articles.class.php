@@ -42,4 +42,6 @@ class Articles{
   function getPrix():REAL{
     return $this->prix;
   }
+
+  //Setter pour les attributs 
 } ?>
