@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-image: linear-gradient(green,blue);
+}
+
+ul{
+    border: 1px solid red;
+    display: table;
+    width: 500px;
+    margin: 100px auto;
+    padding: 0px;
+    background: linear-gradient(deepskyblue,dodgerblue);
+}
+
+h1+ul>li{
+    display: table-cell;
+}
+h1+ul>li>a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+h1+ul+p+ul{
+    border: 1px solid green;
+}

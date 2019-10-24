@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" media ="screen" href="bibliotheque.css">
+    <link rel="stylesheet" media ="screen" href="style.css">
     <title></title>
   </head>
   <body>
