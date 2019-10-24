@@ -1,5 +1,6 @@
-1|Produits|1
+
 2|Livre|1
-21|Roman|2
-3|Bande dessinée|1
-4|Manga|1
+3|Bande dessinée|2
+4|Manga|2
+
+41|Shonen | 4

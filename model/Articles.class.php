@@ -1,13 +1,13 @@
 <?php
 class Articles{
-  public $id; //Reference article
-  public $titre; //Tiutre de l'article
-  public $auteur;
-  public $type; //format
-  public $genre; //description
-  public $desc;
-  public $quantite;
-  public $prix;
+  private $titre; //Tiutre de l'article
+  private $id; //Reference article
+  private $auteur;
+  private $type; //format
+  private $genre;
+  private $desc; //description
+  private $quantite;
+  private $prix;
 
 
   //Getter pour les differents attributs
@@ -42,6 +42,6 @@ class Articles{
   function getPrix():REAL{
     return $this->prix;
   }
-
-  //Setter pour les attributs 
+//
+  //Setter pour les attributs
 } ?>

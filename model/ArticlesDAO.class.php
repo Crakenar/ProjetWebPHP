@@ -6,4 +6,7 @@ class ArticlesDAO{
 
 
   //Construction de l'objet
+  function __construct(){
+    
+  }
 } ?>
