@@ -16,7 +16,7 @@
         <li> <a href="Contact.view.php">Contact</a></li>
     </ul>
     <!-- Fin de la barre de navigation -->
-    <p>NOS PRODUITS PHARES</p>
+    <p>NOS PRODUITS PHARES lolo l</p>
     <div class="slide">
       <figure>
 
