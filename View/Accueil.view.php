@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Accueil</h1>
+    <h1>Accueil test</h1>
     <!-- Barre de navigation-->
     <ul>
         <li> <a href="Accueil.view.php">Accueil</a></li>
