@@ -6,12 +6,14 @@
     <title></title>
   </head>
   <body>
-    <h1>Contact</h1>
+    <h1>PointDeVente</h1>
     <!-- Barre de navigation-->
     <ul>
         <li> <a href="Accueil.view.php">Accueil</a></li>
         <li> <a href="Bibliotheque.view.php">Bibliotheque</a></li>
-        <li> <a href="Contact.view.php">Contact</a></li>
+        <li> <a href="PointDeVente.view.php">PointDeVente</a></li>
     </ul>
+    <a href=""></a>
+    <!-- Afficher le point de vente du livre -->
   </body>
 </html>

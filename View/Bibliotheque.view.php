@@ -11,7 +11,7 @@
     <ul>
         <li> <a href="Accueil.view.php">Accueil</a></li>
         <li> <a href="Bibliotheque.view.php">Bibliotheque</a></li>
-        <li> <a href="Contact.view.php">Contact</a></li>
+        <li> <a href="PointDeVente.view.php">PointDeVente</a></li>
     </ul>
     <!-- Selection critères-->
     <p>Choisissez vos critères</p>
