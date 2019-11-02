@@ -9,10 +9,12 @@ class Articles{
   private $quantite;
   private $prix;
 
-
+  
   //Getter pour les differents attributs
   function getID(): STRING{
-    return $this->id;
+    if(isset($id)){
+      return $this->id;
+    }
   }
 
   function getTitre(): STRING{
