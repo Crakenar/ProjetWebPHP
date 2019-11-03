@@ -1,48 +1,52 @@
 <?php
 class Articles{
-  private $titre; //Tiutre de l'article
-  private $id; //Reference article
-  private $auteur;
-  private $type; //format
-  private $genre;
-  private $desc; //description
-  private $quantite;
-  private $prix;
+  private $Titre; //Tiutre de l'article
+  private $Id; //Reference article
+  private $Auteur;
+  private $Type; //format
+  private $Genre;
+  private $Desc; //description
+  private $Quantite;
+  private $Prix;
+  private $Image;
 
   
   //Getter pour les differents attributs
+
+  function getImage(): string{
+    return $this->Image;
+  }
+
   function getID(): STRING{
-    if(isset($id)){
-      return $this->id;
-    }
+    return $this->Identifiant;
   }
 
   function getTitre(): STRING{
-    return $this->titre;
+    return $this->Titre;
   }
 
   function getAuteur(): STRING{
-    return $this->auteur;
+    return $this->Auteur;
   }
 
   function getType(): STRING{
-    return $this->type;
+    return $this->Type;
   }
 
   function getGenre(): STRING{
-    return $this->genre;
+    return $this->Genre;
   }
 
   function getDescription(): STRING{
-    return $this->desc;
+    return $this->Description;
   }
 
-  function getQuantite(): int{
-    return $this->quantite;
+  function getQuantite(): string{
+    return $this->Quantite;
   }
 
-  function getPrix():REAL{
-    return $this->prix;
+  function getPrix():string{
+    return $this->Prix;
   }
 //
   //Setter pour les attributs

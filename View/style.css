@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
-    background-image: linear-gradient(green,blue);
+    background-image: linear-gradient(rgb(219, 14, 185),blue,red,yellow,orange);
 }
 
 h1+ul{

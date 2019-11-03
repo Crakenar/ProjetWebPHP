@@ -1,5 +1,0 @@
-1|Fnac|4 Rue Félix Poulat, 38000 Grenoble
-2|Arthaud|23 Grande Rue, 38000 Grenoble
-3|Momie Manga|1 Rue Lafayette, 38000 Grenoble
-4|Gilbert Joseph|5 Cours Berriat, 38000 Grenoble
-5|Librairie des Alpes|1 Rue Casimir Périer, 38000 Grenoble

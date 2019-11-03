@@ -1,5 +1,6 @@
-CREATE TABLE pointDeVente(
-    id integer,
-    nom TEXT,
-    adresse TEXT
+CREATE TABLE lieux(
+    Id string,
+    Nom string,
+    Adresse string,
+    GoogleMap TEXT
 );

@@ -1,52 +1,65 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" media ="screen" href="style.css">
-    <title></title>
-  </head>
-  <body>
+<?php include '../include/header.php'?>
     <h1>Bibliotheque</h1>
-    <!-- Barre de navigation-->
-    <ul>
-        <li> <a href="Accueil.view.php">Accueil</a></li>
-        <li> <a href="Bibliotheque.view.php">Bibliotheque</a></li>
-        <li> <a href="PointDeVente.view.php">PointDeVente</a></li>
-    </ul>
+    
     <!-- Selection critères-->
     <p>Choisissez vos critères</p>
     <ul>
-        <form action="mapagePHP">
-            Recherche : <input type="search" name ="Ma Recherche :"> <br>
-            <input type="submit">
-        </form>
-        <fieldset>
-            <legend>Genre</legend>
-            <input type="radio" name= "choix" value ="Science fiction" id ="SF">
-            <label for="SF">Science Fiction</label>
-            <br>
-            <input type="radio" name= "choix" value ="Romance" id ="romance">
-            <label for="Romance">Romance</label>
-            <br>
-            <input type="radio" name= "choix" value ="Action" id ="action">
-            <label for="action">Action</label>
-            <br>
-        </fieldset>
-
-        <form action="">
-            <select name="Date" id="">
-            <option value="">Date de parution</option>
-                <option value="">Apres 2000</option>
-                <option value="">Apres 2010</option>
-                <option value="">Apres 2015</option>
-            </select>
-        </form>
+        <form action="../View/Bibliotheque.view.php" method ="post">   
+        <input type="checkbox" name ="genre" value ="Fantasy">Fantasy <br/> 
+        <input type="checkbox" name ="genre" value ="Policier">Policier <br/> 
+        <input type="checkbox" name ="genre" value ="Shonen">Shonen <br/> 
     <br>
-        <form action="" method ="POST">
-            <input type="range" min ="1" max ="100" value = "100" class ="slider" id="myRangePrice">
-            <input type="text" name = "bar" id ="bar" value="Slider Value =1">
-            <input type=submit value=Submit />
-        </form>
+    <input type="submit" value ="Enregistrer">
+    </form>
     </ul>
-  </body>
-</html>
+    
+    <?php
+    session_start();
+    ///////Affichage des articles ayant le genre selectionné ou alors tous les afficher///
+    ///Attention on peut faire ça car on a pas beaucoup de livres, il faudrait afficher N (connu) livres
+    require_once('../Controler/controler.php');
+    if(isset($_POST['genre'])){
+        $genre =$Adao->getWithGenre($_POST['genre']);
+        foreach($genre as $key => $value){
+            echo'Titre : ';
+            print($genre[$key]->getTitre());
+            echo"<br>";
+            echo'Prix : ';
+            print($genre[$key]->getPrix());
+            echo"<br>";
+            print($genre[$key]->getDescription());
+            echo"<br>";
+            print("Reference : ");
+            print($genre[$key]->getID());
+            echo"<br>";
+            $image = "../View/Images/ImagesLivresEnBibliotheque/".$genre[$key]->getImage();
+            echo'<a href = "PointDeVente.view.php"> <img src="'.$image.'" height="200" width="200"> </a>';
+            echo"<br>";
+            echo"<br>";
+
+        }
+    }else{
+        foreach($articles as $key => $value){
+            $_SESSION['monArticle'] = $articles;
+            echo'Titre : ';
+            print($articles[$key]->getTitre());
+            echo"<br>";
+            echo'Prix : ';
+            print($articles[$key]->getPrix());
+            echo"<br>";
+            print($articles[$key]->getDescription());
+            echo"<br>";
+            print("Reference : ");
+            print($articles[$key]->getID());
+            echo"<br>";
+            $image = "../View/Images/ImagesLivresEnBibliotheque/".$articles[$key]->getImage();
+            echo'<a href = "PointDeVente.view.php"> <img src="'.$image.'" height="200" width="200"> </a>';
+            echo"<br>";
+            echo"<br>";
+        }
+    }
+
+    /////Affichage des articles en fonction du bouton cliqué(GENRE)///////////
+    
+    ?>
+<?php include '../include/footer.php'?>

@@ -7,6 +7,12 @@ require_once('ArticlesDAO.class.php');
 //print_r($config);
 
 $dao = new ArticlesDAO();
-$all = $dao->getAll();
-var_dump($m);
+//$all = $dao->getAll();
+//$all = $dao->getWithId(1);
+//var_dump($all[1]);
+
+$all = $dao->getWithGenre("Policier");
+//$all = $dao->getWithGenre("Fantasy");
+//$all = $dao->getWithGenre("Shonen");
+var_dump($all);
 ?>

@@ -6,12 +6,8 @@ CREATE TABLE articles(
   Genre STRING,
   Description TEXT,
   Quantite int,
-  Prix REAL
-)
-
-CREATE TABLE categorie(
-  id INTEGER PRIMARY KEY,
-  nom TEXT,
-  pere INTEGER,
-  FOREIGN KEY(pere) REFERENCES categorie(id)
+  Prix REAL,
+  Image Text
 );
+
+
