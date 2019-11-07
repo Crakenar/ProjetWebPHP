@@ -1,6 +1,6 @@
 <?php include '../include/header.php'?>
 
-    <h1>Accueil test</h1>
+    <h1>Accueil</h1>
     <p>NOS PRODUITS PHARES</p>
 
     <div class="section" style="max-width:500px">

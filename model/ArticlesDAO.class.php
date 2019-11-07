@@ -39,6 +39,20 @@ class ArticlesDAO{
   }
 
 
+  public function getWithPrice(string $prix): array{
+    $sql = "SELECT * FROM articles WHERE Prix-$prix >=0";
+    $sth = $this->db->query($sql);
+    $result = $sth->fetchAll(PDO::FETCH_CLASS,"Articles");
+    return $result;
+  }
+
+  //Il faudrait gfaire coincider les resultats des 2 fonctions precedentes
+  public function getWithPriceGenre(string $prix, string $genre): array{
+    $sql = "SELECT * FROM articles WHERE Prix-$prix <=0 and genre = '$genre'";
+    $sth = $this->db->query($sql);
+    $result = $sth->fetchAll(PDO::FETCH_CLASS,"Articles");
+    return $result;
+  }
 
 
 
@@ -52,9 +66,7 @@ class ArticlesDAO{
 
 
 
-
-
-  public function getWithTitle(string $Titre) : array{
+ /* public function getWithTitle(string $Titre) : array{
     $sql = "SELECT * FROM articles WHERE titre = '$Titre'";
     $sth = $this->db->query($sql);
     $result = $sth->fetchAll(PDO::FETCH_CLASS)[0];
@@ -83,11 +95,6 @@ class ArticlesDAO{
     $result = $sth->fetchAll(PDO::FETCH_CLASS)[0];
     return $result;
   }
-
-  public function getWithPrice(int $prix): array{
-    $sql = "SELECT * FROM articles WHERE prix = '$prix'";
-    $sth = $this->db->query($sql);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS)[0];
-    return $result;
-  }
+*/
+  
 } ?>

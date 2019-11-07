@@ -6,7 +6,7 @@ CREATE TABLE articles(
   Genre STRING,
   Description TEXT,
   Quantite int,
-  Prix REAL,
+  Prix STRING,
   Image Text
 );
 

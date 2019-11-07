@@ -4,26 +4,26 @@ body{
     background-image: linear-gradient(rgb(219, 14, 185),blue,red,yellow,orange);
 }
 
-h1+ul{
+ul{
     border: 1px solid red;
     display: table;
-    width: 500px;
-    margin: 100px auto;
+    width: 400px;
+    margin: 50px auto;
     padding: 0px;
     background: linear-gradient(deepskyblue,dodgerblue);
 
 }
 
-h1+ul>li{
+ul>li{
     display: table-cell;
 }
-h1+ul>li>a{
+ul>li>a{
   display: block;
   text-align: center;
   text-decoration: none;
   padding: 5px;
 }
 
-h1+ul+p+ul{
+ul+p+ul{
     border: 1px solid green;
 }

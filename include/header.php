@@ -10,5 +10,4 @@
   <ul>
         <li> <a href="Accueil.view.php">Accueil</a></li>
         <li> <a href="Bibliotheque.view.php">Bibliotheque</a></li>
-        <li> <a href="PointDeVente.view.php">PointDeVente</a></li>
     </ul>
